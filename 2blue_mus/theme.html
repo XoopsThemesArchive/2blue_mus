@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+
+
+
+<table border="0" align="center" cellpadding="0" cellspacing="0" id="okvir">
+  <tr>
+    <td>
+	  <TABLE width="100%" 
+            border=0 align=center cellPadding=0 cellSpacing=0 bgcolor="#000000">
+              <TBODY>
+              <TR>
+                <TD width=21><IMG 
+                  src="<{$xoops_url}>/themes/2blue_mus/images/top_tab_left.gif" 
+                  border=0></TD>
+                <TD align=middle width="100%" 
+                background="<{$xoops_url}>/themes/2blue_mus/images/top_tab_bg.gif"></TD>
+      <TD width=21><IMG 
+                  src="<{$xoops_url}>/themes/2blue_mus/images/top_tab_right.gif" 
+                  border=0></TD></TR></TBODY></TABLE>
+		<table  width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td id="headerlogo">
+		  <table  class="head_main" width="100%" border="0" cellpadding="0" cellspacing="0">
+		   <tr> 
+          <td align="left"><img 
+ src="<{$xoops_url}>/themes/2blue_mus/images/logo.gif" width="140" height="60">
+</td>
+<td class="bok" width="225" align="right" valign="top"><div align="center"><{$xoops_banner}></div></td>
+        </tr></table>
+		<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="menu_top">
+		
+		</td>
+        <td class="menu_top_ura"><span id="clock"></span> <script language="JavaScript" type="text/javascript" src="<{$xoops_url}>/themes/2blue_mus/images/clock.js">
+      </script> &nbsp;</td>
+      </tr>
+    </table>
+		</td>
+        </tr>
+      </table>
+    <table border="0" cellpadding="0" cellspacing="0" >
+<td width="171" id="leftcolumn"> 
+          <!-- Start left blocks loop -->
+          <{foreach item=block from=$xoops_lblocks}> <div class="<{cycle values="blockTitle"}>"><{$block.title}></div>
+          <div class="blockContent"><{$block.content}></div>
+		  <img src="<{$xoops_imageurl}>images/160.gif" width="160" height="1" alt="" />
+          <{/foreach}> 
+          <!-- End left blocks loop -->
+          <br /> <br />
+          </td>
+        <td width="369" id="centercolumn"> 
+          <!-- Display center blocks if any -->
+          <{if $xoops_showcblock == 1}> <table class="sadrzaj" cellspacing="0">
+            <tr> 
+              <td id="centerCcolumn" colspan="2"> 
+                <!-- Start center-center blocks loop -->
+                <{foreach item=block from=$xoops_ccblocks}> <table align="center" cellpadding="0" cellspacing="2">
+                  <tr> 
+                    <td> <div class="blockTitle"><{$block.title}></div>
+                      <div class="blockContent"><{$block.content}></div></td>
+                  </tr>
+                </table>
+                <{/foreach}> 
+                <!-- End center-center blocks loop -->
+              </td>
+            </tr>
+            <tr> 
+              <td id="centerLcolumn"> 
+                <!-- Start center-left blocks loop -->
+                <{foreach item=block from=$xoops_clblocks}> <table class="blok" align="center" cellpadding="3" cellspacing="2">
+                  <tr> 
+                    <td> <div class="blockTitle"><{$block.title}></div>
+                      <div class="blockContent"><{$block.content}></div></td>
+                  </tr>
+                </table>
+                <{/foreach}> 
+                <!-- End center-left blocks loop -->
+              </td>
+              <td id="centerRcolumn"> 
+                <!-- Start center-right blocks loop -->
+                <{foreach item=block from=$xoops_crblocks}> <table class="blok" align="center" cellpadding="3" cellspacing="2">
+                  <tr> 
+                    <td> <div class="blockTitle"><{$block.title}></div>
+                      <div class="blockContent"><{$block.content}></div></td>
+                  </tr>
+                </table>
+                <{/foreach}> 
+                <!-- End center-right blocks loop -->
+              </td>
+            </tr>
+          </table>
+          <{/if}> 
+          <!-- End display center blocks -->
+     <div id="content"> <{$xoops_contents}> </div>     
+          </td>
+
+        <{if $xoops_showrblock == 1}> 
+        <td width="170" id="rightcolumn"> 
+          <!-- Start right blocks loop -->
+          <{foreach item=block from=$xoops_rblocks}> <div class="blockTitle"><{$block.title}></div>
+          <div class="blockContent"><{$block.content}></div>
+		  <img src="<{$xoops_imageurl}>images/160.gif" width="160" height="1" alt="" />
+          <{/foreach}> 
+          <!-- End right blocks loop -->
+          <br /> <br /> </td>
+        <{/if}> </tr>
+        <tr> 
+          <td colspan="3"></td>
+        </tr>
+      </table>
+	  <TABLE width="100%" 
+            border=0 align=center cellPadding=0 cellSpacing=0 bgcolor="#000000">
+              <TBODY>
+              <TR>
+                <TD width=21><IMG 
+                  src="<{$xoops_url}>/themes/2blue_mus/images/bot_cat_left.gif" 
+                  border=0></TD>
+                <TD align=middle width="100%" 
+                background="<{$xoops_url}>/themes/2blue_mus/images/bot_cat_bg.gif"></TD>
+      <TD width=21><IMG 
+                  src="<{$xoops_url}>/themes/2blue_mus/images/bot_cat_right.gif" 
+                  border=0></TD></TR></TBODY></TABLE></td>
+  </tr>
+
+</table>
+<div class="privatnost">
+  <br />
+<{$xoops_footer}> &nbsp;|&nbsp;Theme by <a href="http://www.mustangv8.com">Mustang</a>
+<br />
+</div>
+</body>
+</html>
